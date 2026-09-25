@@ -2,7 +2,7 @@
   "entity_type": "requirement",
   "entity_id": "REQ-hospital-self-onboarding-application",
   "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
-  "status": "pending",
+  "status": "completed",
   "questions": [
     {
       "id": "q1",
@@ -54,36 +54,36 @@
       "type": "text",
       "required": true,
       "text": "Which application should the Work Item(s) belong to? This requirement needs both the web-ui (application form, post-submit page, Super Admin review queue) and the api (Tenant Provisioning, certificate upload, status lifecycle, 250k milestone). Options: (a) two Work Items, one per app; (b) a single Work Item under one app - if so, which?",
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "all ui components go un to web-ui and apis to in to api",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-25T03:20:45.807Z"
     },
     {
       "id": "q7",
       "type": "text",
       "required": true,
       "text": "What technology stack should the implementation plan target? The blueprint lists the backend runtime/language and the web framework as 'not yet specified' (e.g. Node/NestJS, Java/Spring Boot, Python/FastAPI for the api; React, Angular, Vue for the web-ui).",
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "react, expressjs",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-25T03:20:45.807Z"
     },
     {
       "id": "q8",
       "type": "text",
       "required": true,
       "text": "Which service creates the Hospital Admin account during self sign-up? The blueprint says the Identity Service 'does not create users - user creation is Hospital Admin's job', but req.md FR-3 has the applicant create the Hospital Admin login themselves. Should Tenant Provisioning create it (calling Identity), or should Identity get a special sign-up path?",
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "Its the identity service itself (it was wrongly worded)",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-25T03:20:45.807Z"
     },
     {
       "id": "q9",
       "type": "text",
       "required": true,
       "text": "The blueprint specifies 'PostgreSQL (per tenant)'. Should a new hospital's tenant database (or schema) be provisioned immediately on application submission, since temporary approval gives full access at once? And is 'per tenant' a separate database, a separate schema in a shared database, or shared tables with a tenant_id column?",
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "There are different levels of saas in certain licenses",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-25T03:20:45.807Z"
     }
   ]
 }
