@@ -1,0 +1,35 @@
+{
+  "entity_type": "workItem",
+  "entity_id": "WI-hospital-self-onboarding-api",
+  "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+  "status": "pending",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "text",
+      "required": true,
+      "text": "Follow-up to the requirement's q9 ('different levels of SaaS in certain licenses'): for each license tier, how is tenant data isolated - separate PostgreSQL database, separate schema in a shared database, or shared tables with a tenant_id column? Please list the tiers and the isolation each one gets.",
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "q2",
+      "type": "text",
+      "required": true,
+      "text": "Which license tier does a hospital get when it self-onboards through this application? The application form (req.md FR-1) doesn't collect a tier, so should it default to a specific tier, or should a tier selection be added to the form?",
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "q3",
+      "type": "text",
+      "required": true,
+      "text": "Should the tenant's database/schema be provisioned synchronously on application submission (so the Hospital Admin has full access immediately, per FR-4), or asynchronously with the admin waiting on a 'setting up' state?",
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    }
+  ]
+}
