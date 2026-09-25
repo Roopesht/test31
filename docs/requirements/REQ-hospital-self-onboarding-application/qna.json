@@ -1,0 +1,53 @@
+{
+  "entity_type": "requirement",
+  "entity_id": "REQ-hospital-self-onboarding-application",
+  "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+  "status": "pending",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "text",
+      "required": true,
+      "text": "What fields must the hospital application form collect (e.g. hospital name, registration/licence number, address, contact person, phone, email, bed count)? Which are mandatory?",
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "q2",
+      "type": "text",
+      "required": true,
+      "text": "Which government documents are accepted as proof of existence (e.g. Clinical Establishment registration certificate, municipal trade licence, GST certificate), how many are required, and what file types / maximum size are allowed?",
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "q3",
+      "type": "text",
+      "required": true,
+      "text": "Does the applicant create the Hospital Admin login as part of this application (self sign-up), or is the Hospital Admin account created later (e.g. by Super Admin on ratification)? The blueprint lists 'Sign up vs Sign in' without detail.",
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "q4",
+      "type": "text",
+      "required": true,
+      "text": "While on temporary approval (before Super Admin ratification), what can the hospital do - full onboarding steps (departments, packages, rate lists, branding) and live patient registration, or configuration only? And if Super Admin stops the service, what happens to data already entered?",
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "q5",
+      "type": "text",
+      "required": true,
+      "text": "Is the '250k' initialization step (listed as part of onboarding in the blueprint, behaviour currently undefined) in scope for this requirement, or should it be handled by a separate requirement?",
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    }
+  ]
+}
