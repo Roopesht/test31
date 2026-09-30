@@ -2,7 +2,7 @@
   "entity_type": "requirement",
   "entity_id": "REQ-hospital-tenant-configuration",
   "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
-  "status": "completed",
+  "status": "pending",
   "questions": [
     {
       "id": "q1",
@@ -57,6 +57,60 @@
       "answer": "only once the tenant is active",
       "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
       "answered_at": "2026-09-30T02:04:50.310Z"
+    },
+    {
+      "id": "wi-q1",
+      "type": "text",
+      "text": "This requirement needs both backend (config endpoints, tenant-active check, rate list/staff/branding storage) and frontend (admin configuration screens). Should it be split into two work items (api and web-ui, as was done for hospital self-onboarding), or a single work item on one app? If one, which?",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "wi-q2",
+      "type": "text",
+      "text": "Departments and packages: what fields does each have (e.g. department name/code/active flag; package name, included services, cap amount)? Are packages tied to a delivery category?",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "wi-q3",
+      "type": "text",
+      "text": "Staff: the Identity Service can create users. Should the config API call the Identity Service to create users, and should staff be deactivatable/deletable, or only created and role-assigned? Is a temporary password or an invite email used?",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "wi-q4",
+      "type": "text",
+      "text": "Branding: where are logos stored (S3 as in the onboarding certificate upload?) and what file types and max size should we enforce, given the requirement left limits unspecified?",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "wi-q5",
+      "type": "text",
+      "text": "Working hours: one schedule for the whole hospital, or per department? Which format (per weekday open/close, closed days)? Is it informational only, or does it restrict any behaviour (e.g. registration, gate actions)?",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "wi-q6",
+      "type": "text",
+      "text": "Rate lists: are the 2 rate lists and 4 delivery categories fixed system entities that only have their rates/caps edited, or can the admin add or remove lists and categories? Should edits be audit-logged even though they are not versioned?",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
     }
   ]
 }
