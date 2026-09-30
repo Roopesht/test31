@@ -2,61 +2,61 @@
   "entity_type": "requirement",
   "entity_id": "REQ-hospital-tenant-configuration",
   "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
-  "status": "pending",
+  "status": "completed",
   "questions": [
     {
       "id": "q1",
       "type": "text",
       "text": "The feature lists six configuration areas (departments, packages, rate lists, staff, branding, operational settings). Should this single requirement cover all six, or only a subset (and which)? The rest would become separate requirements.",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "all of these",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-30T02:04:50.310Z"
     },
     {
       "id": "q2",
       "type": "text",
       "text": "What are the 'operational settings' a Hospital Admin can configure (e.g. working hours, notification/SMS recipients, gate rules, EDD defaults)? Please list the fields.",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "working hours, ",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-30T02:04:50.310Z"
     },
     {
       "id": "q3",
       "type": "text",
       "text": "Rate lists: the blueprint mentions 2 rate lists and 4 delivery categories with package caps. Should the Hospital Admin be able to create/edit both lists and the caps, and are edits versioned or effective-dated?",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "They should be able to edit all the rate lists and 4 delivery categories, edit will be effective immediately ",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-30T02:04:50.310Z"
     },
     {
       "id": "q4",
       "type": "text",
       "text": "Staff: should this requirement include creating users and assigning roles (blueprint says Identity Service does not create users; Hospital Admin does), and which roles are assignable?",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "That was a mistake, identity service can create users",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-30T02:04:50.310Z"
     },
     {
       "id": "q5",
       "type": "text",
       "text": "Branding: what is configurable (logo, name, colours, receipt header/footer) and are there file size/format limits?",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "all of these",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-30T02:04:50.310Z"
     },
     {
       "id": "q6",
       "type": "text",
       "text": "Can configuration be edited before Super Admin ratifies the hospital's onboarding, or only once the tenant is active?",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "only once the tenant is active",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-30T02:04:50.310Z"
     }
   ]
 }
